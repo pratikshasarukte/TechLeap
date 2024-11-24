@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EduLift Basic</title>
+    <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+        
+        
+        
+       
+   
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">TechLeap</a>
+        <nav>
+            <ul>  
+                <li><a href="index.html" id="homeLink" >Home</a></li>
+                <li><a href="about.html" id="aboutLink" class="active">About</a></li>
+                <li><a href="courses.html" id="coursesLink">Courses</a></li>
+                <li><a href="scholarship.html" id="scholarshipLink">Scholarship</a></li>
+                <li><a href="resources.html" id="resourcesLink">Resources</a></li>
+                <li><a href="#" id="loginBtn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="image1.jpg" alt="Image #1">
+            <img class="slide" src="image2.jpg" alt="Image #2">
+            <img class="slide" src="image3.jpg" alt="Image #3">
+            <img class="slide" src="image4.jpg" alt="Image #4">
+        </div>
+
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+
+    </div>
+    
+
+
+      <!-- SERVICES -->
+      <section id="services" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Our Educational Services</h1>
+                        <div class="line"></div>
+                        <p>At TechLeap, we empower learners through innovative and engaging educational experiences, transforming knowledge into skill.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-book-fill"></i> <!-- Use an icon that represents learning -->
+                        </div>
+                        <h5 class="mt-4 mb-3">Online Courses</h5>
+                        <p>Access a wide range of courses designed to enhance your skills in various domains.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-rocket-fill"></i> <!-- Use an icon that represents growth -->
+                        </div>
+                        <h5 class="mt-4 mb-3">Skill Development</h5>
+                        <p>Our programs focus on real applications to help you develop practical skills.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-chat-3-fill"></i> <!-- Use an icon that represents interaction -->
+                        </div>
+                        <h5 class="mt-4 mb-3">Mentorship</h5>
+                        <p>Connect with experienced mentors who can guide you on your learning journey.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-global-fill"></i> <!-- Use an icon that represents connectivity -->
+                        </div>
+                        <h5 class="mt-4 mb-3">Community Learning</h5>
+                        <p>Join a vibrant community of learners to share knowledge and collaborate on projects.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-computer-fill"></i> <!-- Use an icon that represents technology -->
+                        </div>
+                        <h5 class="mt-4 mb-3">Hands-on Workshops</h5>
+                        <p>Participate in interactive workshops to apply what you've learned in real scenarios.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class="ri-user-2-fill"></i> <!-- Use an icon that represents guidance -->
+                        </div>
+                        <h5 class="mt-4 mb-3">Career Counseling</h5>
+                        <p>Receive guidance and support to help you navigate your career path effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- COUNTER SECTION -->
+<section id="counter" class="section-padding">
+    <div class="container text-center mt-5 mb-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                <h1 class="text-white display-4">5,000+</h1>
+                <h6 class="text-uppercase mb-0 text-white mt-3">Students Enrolled</h6>
+            </div>
+            <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                <h1 class="text-white display-4">300+</h1>
+                <h6 class="text-uppercase mb-0 text-white mt-3">Courses Available</h6>
+            </div>
+            <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                <h1 class="text-white display-4">50+</h1>
+                <h6 class="text-uppercase mb-0 text-white mt-3">Expert Instructors</h6>
+            </div>
+            <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                <h1 class="text-white display-4">1,200+</h1>
+                <h6 class="text-uppercase mb-0 text-white mt-3">Certifications Issued</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- REVIEW -->
+ <section id="reviews" class="section-padding bg-light">
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                <div class="section-title">
+                    <h1 class="display-4 fw-semibold">Reviews</h1>
+                    <div class="line"></div>
+                    <p>We love to craft digital experiances for brands rather than crap and more lorem ipsums and do crazy skills</p>
+                </div>
+            </div>
+        </div>
+        <div class="row gy-5 gx-4">
+            <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                <div class="review">
+                    <div class="review-head p-4 bg-white theme-shadow">
+                        <div class="text-warning">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p>Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit dicta voluptatem.</p>
+                    </div>
+                    <div class="review-person mt-4 d-flex align-items-center">
+                        <img class="rounded-circle" src="./images/avatar-1.jpg" alt="">
+                        <div class="ms-3">
+                            <h5>Dianne Russell</h5>
+                            <small>UX Architect</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                <div class="review">
+                    <div class="review-head p-4 bg-white theme-shadow">
+                        <div class="text-warning">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p>Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit dicta voluptatem.</p>
+                    </div>
+                    <div class="review-person mt-4 d-flex align-items-center">
+                        <img class="rounded-circle" src="./images/avatar-2.jpg" alt="">
+                        <div class="ms-3">
+                            <h5>Dianne Russell</h5>
+                            <small>UX Architect</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                <div class="review">
+                    <div class="review-head p-4 bg-white theme-shadow">
+                        <div class="text-warning">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p>Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit dicta voluptatem.</p>
+                    </div>
+                    <div class="review-person mt-4 d-flex align-items-center">
+                        <img class="rounded-circle" src="./images/avatar-3.jpg" alt="">
+                        <div class="ms-3">
+                            <h5>Dianne Russell</h5>
+                            <small>UX Architect</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                <div class="review">
+                    <div class="review-head p-4 bg-white theme-shadow">
+                        <div class="text-warning">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p>Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit dicta voluptatem.</p>
+                    </div>
+                    <div class="review-person mt-4 d-flex align-items-center">
+                        <img class="rounded-circle" src="./images/avatar-4.jpg" alt="">
+                        <div class="ms-3">
+                            <h5>Dianne Russell</h5>
+                            <small>UX Architect</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
+                <div class="review">
+                    <div class="review-head p-4 bg-white theme-shadow">
+                        <div class="text-warning">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p>Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit dicta voluptatem.</p>
+                    </div>
+                    <div class="review-person mt-4 d-flex align-items-center">
+                        <img class="rounded-circle" src="./images/avatar-5.jpg" alt="">
+                        <div class="ms-3">
+                            <h5>Dianne Russell</h5>
+                            <small>UX Architect</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                <div class="review">
+                    <div class="review-head p-4 bg-white theme-shadow">
+                        <div class="text-warning">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p>Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi rerum ipsam impedit dicta voluptatem.</p>
+                    </div>
+                    <div class="review-person mt-4 d-flex align-items-center">
+                        <img class="rounded-circle" src="../images/avatar-6.jpg" alt="">
+                        <div class="ms-3">
+                            <h5>Dianne Russell</h5>
+                            <small>UX Architect</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                <div class="footer-col">
+                    <h3 class="mb-0 text-white">Company</h3>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                <div class="footer-col">
+                    <h3 class="mb-0 text-white">Quick Links</h3>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                <div class="footer-col">
+                    <h3 class="mb-0 text-white">Resources</h3>
+                    <div class="line"></div>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                <div class="footer-col">
+                    <h3 class="mb-0 text-white">Follow us</h3>
+                    <div class="line"></div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© Copyright TechLeap. All Rights Reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Designed with 💜 By <a href="#">PRATIKSHA</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+  
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <br>
+            <button id="googleSignIn">Sign in with Google</button>
+            <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header= document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY>0)
+        })
+    </script>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/app.js"></script>
+    
+    <script src="https://kit.fontawesome.com/f79ab289b0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

@@ -1,0 +1,593 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #ecf0f1;
+    --text-color: #34495e;
+    --header-color: #2c3e50;
+}
+
+@import url(clash-display.css);
+
+:root {
+    --c-dark: #212529;
+    --c-brand: rgb(7,60,66);
+    --c-brand-light: #6970dd;
+    /* --c-brand-rgb: rgb(7,60,66); */
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: black;
+}
+
+header {
+    
+    background-color: var(--header-color);
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto+Condensed:ital',sans-serif;
+}
+
+body{
+    background-color: #fff;
+    min-height: 200vh;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;   
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    z-index: 100000;
+    background: transparent;
+}
+header.sticky{
+    padding:10px 100px;
+    background: #fff;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+
+
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap:20px;
+}
+
+header ul li{
+    font-size: 25px;
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-size: 1em;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/25/20/46/background-image-821780_1280.jpg);
+    background:url(https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4);
+    background-size:cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+.background-clip{
+    position:absolute;
+    right: 0;
+    bottom:0;
+    z-index: -1;
+}
+
+
+@media(min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color:#000;
+}
+
+
+.banner .content{
+    text-align: center;
+    padding: auto;
+}
+
+
+.banner .content h1{
+    font-size: 95px;
+    color:#fff;
+    margin-bottom: 50px;
+
+}
+
+.content a{
+    font-size: 23px;
+    color:#fff;
+    text-decoration: none;
+    border:2px solid #fff;
+    padding:15px 25px;
+    border-radius: 50px;
+    transition:0.3s;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Variable.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Variable.woff') format('woff'),
+         url('../fonts/ClashDisplay-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+/* nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    background-color: var(--primary-color);
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+
+
+
+#hero {
+    background: linear-gradient(rgba(var(--c-brand), 0.507), rgba(var(--c-brand), 0.438)), url(student-849826_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* SECTION TITLE */
+.section-title {
+    margin-bottom: 60px;
+    padding-top: 60px;
+    
+    
+}
+
+.section-title h1 {
+    color: rgb(7,60,66);
+    
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+    color:#020507;
+    
+   
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    color:hsl(138, 45%, 43%)
+}
+
+/* .mt-3 mb-4{
+    color:#020507;                      
+} */
+
+#about {
+    color: #333; /* Changes the default text color */
+}
+
+#about h1 {
+    color:rgb(7,60,66); /* Change color of the "About us" heading */
+}
+
+#about p {
+    color: #0e8966;
+    font-size: 1.2em /* Change color of the paragraph text */
+}
+
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--text-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, button {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(73, 1, 1, 0.2);
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#googleSignIn {
+    background-color: #db4437;
+}
+
+#googleSignIn:hover {
+    background-color: #c1351d;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color:rgb(7,60,66);
+}
+
+
+#about img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* ICONBOX */
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color: rgb(7,60,66);   
+    font-size: 34px;
+    flex: none;
+}
+
+
+footer {
+    padding-top: 120px;
+    margin-bottom: 0;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+     transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+/* SERVICE */
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgb), 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+
+.service:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+
+.service:hover .iconbox {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+
+
+/* COUNTER */
+#counter {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../counter.jpg);
+    /* background: url(image.jpg); */
+    background-position: center;
+    background-size: cover;
+    height: 20em;
+    padding: 50px ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.slider{
+    position: relative;
+    width:100%;
+    margin: auto;
+    overflow:hidden;
+    
+
+}
+
+.slider img{
+    width:100%;
+    display: none;
+
+}
+
+img.displaySlide{
+    display: block;
+    animation-name:fade;
+    animation-duration: 1.5s; 
+}
+
+.slider button{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding:10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color:white;
+    border:none;
+    cursor: pointer;
+}
+
+.prev{
+    left:0;
+}
+
+.next{
+    right:0;
+}
+
+@keyframes fade{
+    from {opacity: .5}
+    to {opacity: 1;}
+}
+
+
+.slides {
+    position: relative; 
+    overflow: hidden; /* Hides the overflow */
+    width: 100%; /* Adjust based on your layout */
+    height: 700px; /* Adjust based on your image height */
+}
+
+.slides img {
+    position: absolute; /* Position absolute for sliding effect */
+    width: 100%; /* Adjust according to your needs */
+    height: auto; /* Adjust according to your needs */
+    transition: transform 0.5s ease-in-out; /* Transition for sliding effect */
+    display: none; /* Hide all slides initially */
+}
+
+.slides img.displaySlide {
+    display: block; /* Show the active slide */
+}
+
+
+
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - EduLift Basic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="scholarship.html">Scholarship</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="#" id="loginBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLift</title> -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        .hero-section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(158, 208, 255);
+            border-radius: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+        p {
+            font-size: 1.25em;
+            margin-bottom: 20px;
+            color: #666666;
+        }
+        .hero-buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: rgb(251, 255, 252);
+            border: 2px solid green;
+            border-radius: 5px;
+            background-color: green;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero-section">
+    <video class="background-video" autoplay muted loop>
+        <source src="/path-to-your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>Welcome to EduLift</h1>
+        <p>Elevate your learning experience with our cutting-edge courses. Discover a world of knowledge and unlock your potential today.</p>
+        <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="window.location.href='courses.html'">Explore Courses</button>
+            <button class="btn btn-outline" onclick="window.location.href='/signup'">Sign Up</button>
+        </div>
+    </div>
+</div>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <br>
+        <button id="googleSignIn">Sign in with Google</button>
+        <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+    </div>
+</div>
+
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+    </div>
+</div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="../firebase-config.js"></script>
+    <script src="../scripts/auth.js"></script>
+    <script src="../scripts/app.js"></script>
+</body>
+</html>
